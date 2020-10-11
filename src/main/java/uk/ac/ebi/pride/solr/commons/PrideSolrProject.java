@@ -767,6 +767,23 @@ public class PrideSolrProject implements ProjectProvider, PrideProjectField {
         return null;
     }
 
+    public Set<String> getInstrumentsFacet() {
+        return instrumentsFacet;
+    }
+
+    public void setInstrumentsFacet(Set<String> instrumentsFacet) {
+        this.instrumentsFacet = instrumentsFacet;
+    }
+
+    public Set<String> getIdentifiedPTMStringsFacet() {
+        return identifiedPTMStringsFacet;
+    }
+
+    public void setIdentifiedPTMStringsFacet(Set<String> identifiedPTMStringsFacet) {
+        this.identifiedPTMStringsFacet = identifiedPTMStringsFacet;
+    }
+
+
     @Override
     public Collection<? extends String> getSampleAttributes() {
         return (sampleAttributes != null) ? sampleAttributes : Collections.EMPTY_LIST;
