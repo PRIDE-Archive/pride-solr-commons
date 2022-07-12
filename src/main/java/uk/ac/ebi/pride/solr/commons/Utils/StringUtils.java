@@ -58,10 +58,11 @@ public class StringUtils {
             String[] filtersString = (filterQuery).split(",");
             if (filtersString.length > 0) {
                 Arrays.asList(filtersString).forEach(filter -> {
+                    filter = filter.trim();
                     String[] filterString = filter.split("==");
                     if (filterString.length == 2) {
-                        String value = StringUtils.convertSentenceStyle(filterString[1]);
-                        filters.add(PrideProjectFieldEnum.returnFilterField(filterString[0]), value);
+                        String value = StringUtils.convertSentenceStyle(filterString[1].trim());
+                        filters.add(PrideProjectFieldEnum.returnFilterField(filterString[0].trim()), value);
                     } else
                         log.debug("The filter provided is not well-formatted, please format the filter in field:value -- " + filter);
 

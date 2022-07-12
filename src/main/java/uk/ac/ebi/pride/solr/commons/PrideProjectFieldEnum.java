@@ -118,7 +118,7 @@ public enum PrideProjectFieldEnum {
      */
     public static String returnFilterField(String filterField) {
         for (PrideProjectFieldEnum enumField : values()) {
-            if (enumField.getValue().equalsIgnoreCase(filterField)) {
+            if (enumField.getValue().equalsIgnoreCase(filterField.trim())) {
                 return enumField.getFilterField();
             }
         }
