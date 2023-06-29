@@ -98,6 +98,8 @@ public interface PrideProjectField {
     String ORGANISM_PART = "organisms_part";
     String DISEASES = "diseases";
 
+    String PROJECT_SDRF = "sdrf";
+
     /** References related with the project **/
     String PROJECT_REFERENCES = "project_references";
 

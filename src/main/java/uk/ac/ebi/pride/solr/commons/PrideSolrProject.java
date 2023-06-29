@@ -351,6 +351,10 @@ public class PrideSolrProject implements ProjectProvider, PrideProjectField {
 //    @Setter(AccessLevel.PRIVATE)
     private Set<String> diseases;
 
+
+    @Indexed(name = PROJECT_SDRF)
+    private String sdrf;
+
     /**
      * References related with the project
      **/

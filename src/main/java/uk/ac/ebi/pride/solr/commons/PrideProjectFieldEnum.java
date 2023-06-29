@@ -29,6 +29,8 @@ public enum PrideProjectFieldEnum {
     PROJECT_SAMPLE_PROTOCOL(PrideProjectField.PROJECT_SAMPLE_PROTOCOL, false, false, false, true, ConstantsSolrTypes.TEXT_GENERAL, PrideProjectField.PROJECT_SAMPLE_PROTOCOL, true),
     PROJECT_DATA_PROTOCOL(PrideProjectField.PROJECT_DATA_PROTOCOL, false, false, false, true, ConstantsSolrTypes.TEXT_GENERAL, PrideProjectField.PROJECT_DATA_PROTOCOL, true),
 
+    PROJECT_SDRF(PrideProjectField.PROJECT_SDRF, false, false, false, true, ConstantsSolrTypes.TEXT_GENERAL, PrideProjectField.PROJECT_SDRF, true),
+
     PROJECT_TAGS(PrideProjectField.PROJECT_TAGS, false, true, false, true, ConstantsSolrTypes.TEXT_GENERAL, PrideProjectField.PROJECT_TAGS, true),
     PROJECT_TAGS_FACET(PrideProjectField.PROJECT_TAGS_FACET, true, true, false, false, ConstantsSolrTypes.STRING, PrideProjectField.PROJECT_TAGS_FACET, true),
 
