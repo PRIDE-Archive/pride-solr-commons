@@ -433,6 +433,9 @@ public class PrideSolrProject implements ProjectProvider, PrideProjectField {
         this.additionalAttributesFacet.addAll(params.stream().map(CvParamProvider::getName).collect(Collectors.toSet()));
     }
 
+    public void setSdrf(String sdrf) {
+        this.sdrf = sdrf;
+    }
 
     /**
      * This method set the list of quantification methods taking as a parameter a list of {@link CvParamProvider}
